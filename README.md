@@ -6,8 +6,8 @@
 + JS
 
 ## In-Class Assignments
-+ ICA1
-+ ICA2
++ [ICA1] (ica/ICA1.pdf)
++ [ICA2] (ica/ICA2.pdf)
 + ICA3
 + ICA4
 + ICA5
@@ -24,7 +24,7 @@
 
 ## Weekly Assignments
 + [WA1](https://dannysob.github.io/wa/wa1.html)
-+ WA2
++ [WA2] (https://dannysob.github.io/wa/wa2.html)
 + WA3
 + WA4
 + WA5
