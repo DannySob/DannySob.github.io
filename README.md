@@ -8,8 +8,8 @@
 ## In-Class Assignments
 + [ICA1](ica/ICA1.pdf)
 + [ICA2](ica/ICA2.pdf)
-+ [ICA3A](ica/ica3a.html)
-+ [ICA3B](ica/ica3b/ica3b.html)
++ [ICA3A](https://dannysob.github.io/ica/ica3a.html)
++ [ICA3B](https://dannysob.github.io/ica/ica3b/ica3b.html)
 + ICA4
 + ICA5
 + ICA6
