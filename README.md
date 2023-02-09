@@ -5,6 +5,9 @@
 + CSS
 + JS
 
+## Midterm
++ [html-midterm](https://dannysob.github.io/html-midterm/page5.html)
+
 ## In-Class Assignments
 + [ICA1](ica/ICA1.pdf)
 + [ICA2](ica/ICA2.pdf)
