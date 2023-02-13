@@ -28,6 +28,7 @@ body {
   article p {
     padding: 1em;
   }
+  
   /* Card Rulesets */
   
   .card {
@@ -60,6 +61,44 @@ body {
   }
   
   .card article img {
+    max-height: 100%;
+    float: right;
+  }
+
+  /* card2 Ruleset */
+
+  .card2 {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: orange;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    font-family: "optima";
+    color: maroon;
+  }
+
+.card2 header, .card2 footer {
+    height: 3em;
+    padding: 1em;
+}
+  
+  .card2 header {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), red);
+    border-radius: 1.5em 1.5em 0 0;
+  }
+  
+  .card2 footer {
+    background-image: linear-gradient(to bottom,red, rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+  }
+  
+  .card2 footer p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+    
+  .card2 article img {
     max-height: 100%;
     float: right;
   }
