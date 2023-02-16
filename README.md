@@ -31,7 +31,7 @@
 + [WA2](https://dannysob.github.io/wa/wa2.html)
 + [WA3](https://dannysob.github.io/wa/wa3.html)
 + [WA4](https://dannysob.github.io/wa/wa4.html)
-+ WA5
++ [WA5](https://dannysob.github.io/wa/wa5.html)
 + WA6
 + WA7
 + WA8
