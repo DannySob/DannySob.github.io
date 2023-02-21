@@ -15,7 +15,7 @@
 + [ICA3B](https://dannysob.github.io/ica/ica3b/ica3b.html)
 + [ICA4](https://dannysob.github.io/ica/ica4.html)
 + [ICA5](https://dannysob.github.io/ica/ica5/ica5.html)
-+ ICA6
++ [ICA6](https://dannysob.github.io/ica/ica6/ica6-part1.html)
 + ICA7
 + ICA8
 + ICA9
