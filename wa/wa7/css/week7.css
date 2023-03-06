@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#dac4a9,#216c9c,#69696b);
+    font-family: didot;
+    color: saddlebrown;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: saddlebrown;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:floralwhite;
+}
+
+
+img{
+    width: 30vw;
+    filter: blur(10px);
+    transition: 1s linear;
+}
+
+img:hover {
+    filter: blur(0px);
+}
+
+#red-ball{
+    background-color: #216c9c;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+}
