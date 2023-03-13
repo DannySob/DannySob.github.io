@@ -1,12 +1,9 @@
 # DannySob.github.io
 
 ## Projects
-+ HTML
-+ CSS
++ [HTML](https://dannysob.github.io/html-midterm/page5.html)
++ [CSS](https://dannysob.github.io/index.html)
 + JS
-
-## Midterm
-+ [html-midterm](https://dannysob.github.io/html-midterm/page5.html)
 
 ## In-Class Assignments
 + [ICA1](ica/ICA1.pdf)

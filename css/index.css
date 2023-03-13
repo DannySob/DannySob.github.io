@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+
+#Main {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div {
+    display: block;
+}
+
+#Left {
+    order: 1;
+    background-color: #9b9abf;
+    height: 100vw;
+}
+
+#LeftContent {
+    color: black;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#Left h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav {
+    padding: .5em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+li + li {
+    border-left: solid 1px white;
+}
+
+nav a {
+    color: black;
+    padding: 0 2em;
+}
+
+#SelfPic {
+    background-image: url(/img/SelfImage.png);
+    background-size: 500px;
+}
+
+#SelfPic img {
+    width: 400px;
+    margin-left: Auto;
+    margin-right: Auto;
+    padding: 1vw;
+}
+
+#Right {
+    order: 2;
+    padding: 1vw;
+    background-color: #7b6e6b;
+}
+
+#Right h2 {
+    padding: .5em;
+}
+
+#Right p {
+    margin: 100;
+}
