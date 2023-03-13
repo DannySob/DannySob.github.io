@@ -1,70 +1,155 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    background-image: url(/img/Background-Pattern.jpg);
-    background-size: 100vw;
+@media screen and (min-width: 500px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        background-image: url(/img/Background-Pattern.jpg);
+        background-size: 100vw;
+    }
+
+    #Main {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    a {
+        color: rgb(31,32,37);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #Left {
+        order: 1;
+        height: 100vw;
+        backdrop-filter: blur(5px);
+    }
+
+    #LeftContent {
+        color: black;
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+
+    #Left h1 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    #SelfPic {
+        background-image: url(/img/SelfImage-Dark.png);
+        background-size: 500px;
+    }
+
+    #SelfPic img {
+        width: 400px;
+        margin-left: Auto;
+        margin-right: Auto;
+        padding: 1vw;
+    }
+
+    #Right {
+        order: 2;
+        padding: 1vw;
+        align-content: center;
+    }
+
+    #RightContent {
+        position: sticky;
+        top: 5vw;
+        padding: 1vw;
+        background-color: rgba(31,32,37,.4);
+    }
+
+    #Right h2 {
+        color: white;
+        padding: .5em;
+        border-left: 5px solid rgb(191,165,142)
+    }
+
+    #Right p {
+        margin: 100;
+        color: rgb(31,32,37);
+    }
 }
 
-#Main {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
+@media screen and (max-width: 500px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        background-image: url(/img/Background-Pattern.jpg);
+        background-size: 100vw;
+    }
 
-div {
-    display: block;
-}
+    #Main {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-#Left {
-    order: 1;
-    height: 100vw;
-    backdrop-filter: blur(10px);
-}
+    a {
+        color: rgb(31,32,37);
+        font-weight: bold;
+        text-decoration: none;
+    }
 
-#LeftContent {
-    color: black;
-    padding: 1vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: sticky;
-    top: 0;
-}
+    #Left {
+        order: 1;
+        height: 100vw;
+        backdrop-filter: blur(5px);
+    }
 
-#Left h1 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    #LeftContent {
+        color: black;
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 0;
+    }
 
-#SelfPic {
-    background-image: url(/img/SelfImage-Dark.png);
-    background-size: 500px;
-}
+    #Left h1 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-#SelfPic img {
-    width: 400px;
-    margin-left: Auto;
-    margin-right: Auto;
-    padding: 1vw;
-}
+    #SelfPic {
+        background-image: url(/img/SelfImage-Dark.png);
+        background-size: 70vw;
+    }
 
-#Right {
-    order: 2;
-    padding: 1vw;
-    align-content: center;
-}
+    #SelfPic img {
+        width: 65vw;
+        margin-left: Auto;
+        margin-right: Auto;
+        padding: 1vw;
+    }
 
-#RightContent {
-    position: sticky;
-    top: 5vw;
-    padding: 1vw;
-    background-color: rgba(123,110,107,.8);
-}
+    #Right {
+        order: 2;
+        padding: 1vw;
+        align-content: center;
+    }
 
-#Right h2 {
-    padding: .5em;
-}
+    #RightContent {
+        position: relative;
+        top: 0;
+        padding: 1vw;
+        background-color: rgba(31,32,37,.4);
+    }
 
-#Right p {
-    margin: 100;
+    #Right h2 {
+        color: white;
+        padding: .5em;
+        border-left: 5px solid rgb(191,165,142)
+    }
+
+    #Right p {
+        margin: 100;
+        color: rgb(31,32,37);
+    }
 }
