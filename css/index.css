@@ -1,7 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    background-color: white;
+    background-image: url(/img/Background-Pattern.jpg);
+    background-size: 100vw;
 }
 
 #Main {
@@ -16,8 +17,8 @@ div {
 
 #Left {
     order: 1;
-    background-color: #9b9abf;
     height: 100vw;
+    backdrop-filter: blur(10px);
 }
 
 #LeftContent {
@@ -35,30 +36,8 @@ div {
     letter-spacing: 1px;
 }
 
-nav {
-    padding: .5em;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-}
-
-li + li {
-    border-left: solid 1px white;
-}
-
-nav a {
-    color: black;
-    padding: 0 2em;
-}
-
 #SelfPic {
-    background-image: url(/img/SelfImage.png);
+    background-image: url(/img/SelfImage-Dark.png);
     background-size: 500px;
 }
 
@@ -72,7 +51,14 @@ nav a {
 #Right {
     order: 2;
     padding: 1vw;
-    background-color: #7b6e6b;
+    align-content: center;
+}
+
+#RightContent {
+    position: sticky;
+    top: 5vw;
+    padding: 1vw;
+    background-color: rgba(123,110,107,.8);
 }
 
 #Right h2 {
