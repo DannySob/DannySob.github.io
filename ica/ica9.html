@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button {
+            border: 5px solid black;
+            border-radius: 20px;
+            Background-color: grey;
+            padding: 50px;
+            width: 250px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="button">
+        <p>
+            Click Me!
+        </p>
+
+    </div>
+    <div class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="number" min="1" max="100" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <script>
+        console.log("Hello, world!")
+        let button = document.querySelector("#button");
+        //console.log(button);
+
+        function changeButton() {
+            //console.log("worked");
+            button.textContent = "test";
+            button.style.backgroundColor = 'magenta';
+        }
+       
+        button.addEventListener('click',changeButton);
+
+        function checkGuess() {
+            let value = userGuess.value * 2;
+            alert(value);
+        }
+
+        let guessButton = document.querySelector(".guessSubmit");
+        let userGuess = document.querySelector(".guessField");
+
+        guessButton.addEventListener('click',checkGuess);
+
+    </script>
+</body>
+</html>
