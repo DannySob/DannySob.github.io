@@ -32,7 +32,7 @@
 + [WA7](https://dannysob.github.io/wa/wa7/wa7.html)
 + [WA9](https://dannysob.github.io/wa/wa9/wa9.html)
 + [WA10](https://dannysob.github.io/wa/wa10/wa10.html)
-+ WA11
++ [WA11](https://dannysob.github.io/wa/wa11.html)
 + WA12
 + WA13
 + WA14

@@ -11,8 +11,9 @@ html {
   }
   
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #c9bd95;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(191,165,142);
   }
   
   .app {
@@ -42,7 +43,13 @@ html {
   .quote-text {
     padding-bottom: 20px;
     font-size: 25px;
-    color: black;
+    color: rgb(31,32,37);
+  }
+
+  .quote-author {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: rgb(31,32,37);
   }
   
   .controls {
@@ -61,15 +68,6 @@ html {
     width: 100%;
     font-size: 20px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-  }
-  
-  .twitter {
-    background-color: #1da1f2;
-    text-decoration: none;
-  }
-  
-  .twitter:hover {
-    background-color: #1e7fbb;
   }
   
   .new-quote {

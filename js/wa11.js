@@ -1,26 +1,19 @@
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
     getQuote();
-    localStorage.setItem("text", quoteText);
 });
 
 const quoteText = document.querySelector("#js-quote-text")
+const quoteAuthor = document.querySelector("#js-quote-author")
 
-function getQuote() {
-    fetch('https://trivia.cyberwisp.com/getrandomchristmasquestion')
-    .then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error: ${response.status}`);
-    }
-    return response.text();
-    })
-    .then((text) => quoteText.textContent = text)
-    .catch((error) => quoteText.textContent = `Could not fetch verse: ${error}`);
-
+async function getQuote() {
+  const response = await fetch("https://api.quotable.io/random");
+  const data = await response.json();
+  if (response.ok) {
+    quoteText.textContent = data.content;
+    quoteAuthor.textContent = data.author;
+  } else {
+    quote.textContent = "An error occured";
+    console.log(data);
   }
-
-function displayQuote(quote) {
-    const text = document.createElement('p');
-    text.textContent = quote;
-    quoteText.appendChild(text);
 }
