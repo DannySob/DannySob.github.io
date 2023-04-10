@@ -84,6 +84,12 @@ html {
     color: #666666;
     cursor: not-allowed;
   }
+
+  a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+  }
   
   @media screen and (max-width: 600px) {
     .app {

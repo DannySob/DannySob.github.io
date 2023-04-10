@@ -12,8 +12,10 @@ async function getQuote() {
   if (response.ok) {
     quoteText.textContent = data.content;
     quoteAuthor.textContent = data.author;
+    document.getElementById("wiki").setAttribute("href","https://en.wikipedia.org/wiki/"+data.author);
   } else {
     quote.textContent = "An error occured";
     console.log(data);
   }
 }
+getQuote();
