@@ -1,12 +1,12 @@
-let emp = '{"employees": [' + 
+let emp1 = '{"employees": [' + 
 ' {"firstname": "Sam", "department": "Tech", "designation": "Manager", "salary": "40,000", "raise eligable": "True" },' +
 ' {"firstname": "Mary", "department": "Finance", "designation": "Trainee", "salary": "18,500", "raise eligable": "True" },' +
 ' {"firstname": "Bill", "department": "HR", "designation": "Executive", "salary": "21,200", "raise eligable": "False"} ]}';
 
-const employ = JSON.parse(emp);
+const employ1 = JSON.parse(emp1);
 
 console.log("Problem 1");
-console.log(employ);
+console.log(employ1);
 
 let com = '{"company": [' +
 ' {"companyname": "Tech Stars", "website": "www.techstars.site", "employees": [' + 
@@ -35,17 +35,37 @@ let sal = employ2["employees"][0].salary + employ2["employees"][1].salary + empl
 console.log("Problem 4");
 console.log(sal); 
 
-function salaryUpdate() {
-    for (let i = 0; i < employ2["employees"][i].salary.length; i++) {
-        if (employ2["employees"][i].raise_eligable === 'True') {
-            employ2["employees"][i].salary *= 1.1;
-            employ2["employees"][i].raise_eligable = 'False';
-            return;
+let emp3 = '{"employees": [' + 
+' {"firstname": "Sam", "department": "Tech", "designation": "Manager", "salary": 40000, "raise_eligable": "True" },' +
+' {"firstname": "Mary", "department": "Finance", "designation": "Trainee", "salary": 18500, "raise_eligable": "True" },' +
+' {"firstname": "Bill", "department": "HR", "designation": "Executive", "salary": 21200, "raise_eligable": "False"},' +
+' {"firstname": "Anna", "department": "Tech", "designation": "Executive", "salary": 25600, "raise_eligable": "False"} ]}';
+
+const employ3 = JSON.parse(emp3);
+
+function salaryUpdate(employ) {
+    for (let i = 0; i < employ["employees"].length; i++) {
+        if (employ["employees"][i].raise_eligable === 'True') {
+            employ["employees"][i].salary *= 1.1;
+            employ["employees"][i].raise_eligable = 'False';
         }
     }
 }
 
-salaryUpdate();
+salaryUpdate(employ3);
 
 console.log("Problem 5");
-console.log(employ2);
+console.log(employ3);
+
+let emp4 = '{"employees": [' + 
+' {"firstname": "Sam", "department": "Tech", "designation": "Manager", "salary": 40000, "raise_eligable": "True", "work_from_home": "True"},' +
+' {"firstname": "Mary", "department": "Finance", "designation": "Trainee", "salary": 18500, "raise_eligable": "True", "work_from_home": "False"},' +
+' {"firstname": "Bill", "department": "HR", "designation": "Executive", "salary": 21200, "raise_eligable": "False", "work_from_home": "False"},' +
+' {"firstname": "Anna", "department": "Tech", "designation": "Executive", "salary": 25600, "raise_eligable": "False", "work_from_home": "True"} ]}';
+
+const employ4 = JSON.parse(emp4);
+
+salaryUpdate(employ4);
+
+console.log("Problem 6");
+console.log(employ4);
