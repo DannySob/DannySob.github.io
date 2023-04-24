@@ -13,14 +13,14 @@ function reset() {
 
 function minus() {
     if (outputInt > 0) {
-    outputInt -=7;
+    outputInt -= 10;
     output.textContent = outputInt; }
     
 }
 
 function plus() {
     if (outputInt < 100) {
-    outputInt +=7;
+    outputInt += 10;
     output.textContent = outputInt;
     }
 }
@@ -41,25 +41,25 @@ let outputInt = parseInt(output.textContent);
 console.log(outputInt);
 
 function countDown() {
-    if (outputInt <= 3) {
+    if (outputInt <= 0) {
         outputInt = 0;
         output.textContent = outputInt;
         volumeBar.style.width = '0%';
     }
     else if (outputInt >= 100) {
         outputInt = 100;
-        outputInt -= 3;
+        outputInt -= 1;
         output.textContent = outputInt;
         volumeBar.style.width = '100%';
     }
     else {
-        outputInt -= 3;
+        outputInt -= 1;
         output.textContent = outputInt;
         volumeBar.style.width = outputInt + '%';
     }
 }
 
-setInterval(countDown, 100);
+setInterval(countDown, 20);
 
 const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
 const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
