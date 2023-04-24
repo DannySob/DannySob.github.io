@@ -59,7 +59,7 @@ function countDown() {
     }
 }
 
-setInterval(countDown, 200);
+setInterval(countDown, 100);
 
 const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
 const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
