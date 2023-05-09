@@ -1,0 +1,97 @@
+h1 {
+    text-align: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+#cpu {
+    border: 5px solid;
+    padding: 20px;
+    border-color: maroon;
+    width: 400px;
+    order: 1;
+}
+
+#cpu-draw {
+    border: 3px solid;
+    border-radius: 10px;
+    height: 400px;
+    width: 250px;
+}
+
+#cpu-card-left-corner {
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    top: -60px;
+    font-size: 50px;
+    
+}
+
+#cpu-card-right-corner {
+    padding: 20px;
+    position: relative;
+    text-align: right;
+    top: -70px;
+    font-size: 50px;
+}
+
+#cpu-card-center {
+    text-align: center;
+    position: relative; 
+    top: -60px;
+    font-size: 75px;
+}
+
+#player {
+    border: 5px solid;
+    padding: 20px;
+    border-color: maroon;
+    width: 400px;
+    order: 2;
+}
+
+#player-draw {
+    border: 3px solid;
+    border-radius: 10px;
+    height: 400px;
+    width: 250px;
+}
+
+#player-card-left-corner {
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    top: -60px;
+    font-size: 50px;
+    color: red;
+    
+}
+
+#player-card-right-corner {
+    padding: 20px;
+    position: relative;
+    text-align: right;
+    top: -70px;
+    font-size: 50px;
+    color: red;
+}
+
+#player-card-center {
+    text-align: center;
+    position: relative; 
+    top: -60px;
+    font-size: 75px;
+    color: red;
+}
+
+.draw {
+    width: 200px;
+    padding: 10px;
+    font-size: 30px;
+}
