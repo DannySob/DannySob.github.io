@@ -3,7 +3,7 @@
 ## Projects
 + [HTML](https://dannysob.github.io/html-midterm/page5.html)
 + [CSS](https://dannysob.github.io/index.html)
-+ JS
++ [JS](https://dannysob.github.io/js-final/js-final.html)
 
 ## In-Class Assignments
 + [ICA1](ica/ICA1.pdf)
